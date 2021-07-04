@@ -1,0 +1,18 @@
+<div class="container ">
+  <div class='row'>
+    <div>
+      <button mat-button class='start-call'(click)="call()">start</button>
+        <button class= 'join-call'mat-mini-fab>join</button>
+        <button mat-mini-fab class="hungup"(click)="hangUp()">Call end</button>
+      <button mat-raised-button color="primary" (click)="startLocalVideo()" [disabled]="localVideoActive">Start Local</button>
+    <button mat-raised-button color="primary" (click)="pauseLocalVideo()" [disabled]="!localVideoActive">Stop Local</button>
+    </div>
+
+
+  <div class='video-wrapper'>
+      <video #recieved_video [autoplay]='true' ></video>
+      <video #local_video  [autoplay]="true" [muted]='true'></video>
+
+  </div>
+
+</div>
