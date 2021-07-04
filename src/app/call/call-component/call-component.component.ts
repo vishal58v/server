@@ -27,8 +27,8 @@ const offerOptions = {
 })
 export class  CallComponentComponent implements AfterViewInit {
 
-  @ViewChild('local_video') localVideo: ElementRef;
-  @ViewChild('received_video') remoteVideo: ElementRef;
+  @ViewChild('localVideo') localVideo: ElementRef;
+  @ViewChild('remoteVideo') remoteVideo: ElementRef;
 
   private peerConnection: RTCPeerConnection;
 
